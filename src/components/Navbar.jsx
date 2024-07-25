@@ -6,7 +6,7 @@ const Navbar = () => {
   const { cart } = useSelector((state) => state);
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#475569" }}>
       <nav className="flex justify-between items-center h-20 max-w-6xl mx-auto">
         <NavLink to="/">
           <div className="ml-5">

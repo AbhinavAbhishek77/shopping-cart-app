@@ -8,11 +8,15 @@ import Cart from "./pages/Cart";
 const App = () => {
   return (
     <div>
-      <div style={{ backgroundColor: "#475569" }}>
-        <Navbar />
+      <div >
+        <Navbar/>
+       <Routes>
+       <Route path="/" element={<Home />} />
+       </Routes>
+        
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>
